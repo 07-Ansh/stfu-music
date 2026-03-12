@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stfu.music — your desi harmonium</title>
+    <meta name="description"
+        content="Somebody turned a MacBook into a harmonium. Close the lid for air, press keys for music. No laptops were harmed (probably).">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Switch vibes">☀️</button>
+
+    <header class="header">
+        <h1>stfu.<span>music</span></h1>
+        <p class="tagline">turning a perfectly good laptop into your desi harmonium because why not <span
+                class="emoji">🎹</span></p>
+    </header>
+
+    <main class="card">
+        <div class="status-bar">
+            <div id="status-tip" class="status-tip">
+                <span class="dot"></span>
+                <span>click once so your browser lets me make noise</span>
+            </div>
+            <div class="connection-badge" id="conn-badge">
+                <span class="conn-dot"></span>
+                <span id="conn-label">lid on break 💤</span>
+            </div>
+        </div>
+
+        <div class="bellows-section">
+            <div class="bellows-label" id="angle-display">air in the lungs · lid 0°</div>
+            <div class="bellows-track">
+                <div class="bellows-fill" id="fill"></div>
+            </div>
+        </div>
+
+        <div class="piano-container">
+            <div class="piano">
+                <div id="key-a" class="key"><span class="note-name">C</span><span class="shortcut">A</span></div>
+                <div id="key-w" class="key black"><span class="note-name">C♯</span><span class="shortcut">W</span></div>
+                <div id="key-s" class="key"><span class="note-name">D</span><span class="shortcut">S</span></div>
+                <div id="key-e" class="key black"><span class="note-name">D♯</span><span class="shortcut">E</span></div>
+                <div id="key-d" class="key"><span class="note-name">E</span><span class="shortcut">D</span></div>
+                <div id="key-f" class="key"><span class="note-name">F</span><span class="shortcut">F</span></div>
+                <div id="key-t" class="key black"><span class="note-name">F♯</span><span class="shortcut">T</span></div>
+                <div id="key-g" class="key"><span class="note-name">G</span><span class="shortcut">G</span></div>
+                <div id="key-y" class="key black"><span class="note-name">G♯</span><span class="shortcut">Y</span></div>
+                <div id="key-h" class="key"><span class="note-name">A</span><span class="shortcut">H</span></div>
+                <div id="key-u" class="key black"><span class="note-name">A♯</span><span class="shortcut">U</span></div>
+                <div id="key-j" class="key"><span class="note-name">B</span><span class="shortcut">J</span></div>
+                <div id="key-k" class="key"><span class="note-name">C</span><span class="shortcut">K</span></div>
+            </div>
+        </div>
+
+        <div class="cheater-section">
+            <button class="cheater-toggle" id="cheater-toggle">
+                <span>don't want to play with your laptop lid? no worries, not everyone gets it</span>
+                <span class="arrow">▼</span>
+            </button>
+            <div class="cheater-panel" id="cheater-panel">
+                <div class="cheater-content">
+                    <p class="cheater-disclaimer">the lid thing isn't for everyone. it's for the ones like me — the ones
+                        who looked at a MacBook and said "yeah, that's a harmonium." but hey, if you'd rather press
+                        buttons like a normal person, here you go.</p>
+                    <div class="manual-controls">
+                        <button class="pump-btn main-pump" id="auto-pump">auto pump: off 💨</button>
+                    </div>
+                    <p class="preset-label">works? sure. same vibe? absolutely not.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer class="footer">
+        <p class="hint">
+            <strong>hold keys</strong> to pick your vibe · <strong>close the lid</strong> to pump air · your roommate's
+            sanity is not our problem
+        </p>
+        <p class="credit">stfu.music · cheaper than therapy, louder than your ex</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
